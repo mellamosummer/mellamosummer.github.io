@@ -1,68 +1,31 @@
-# Site
-title:              Ryan N. Felice, Ph.D.
-bio:                'Evolutionary Biologist at UCL'
-description:        "Evolutionary Biologist at UCL"
-locale:             en_US
-baseurl: "/index" # the subpath of your site, e.g. /blog
-url: "https://rnfelice.github.io/" # the base hostname & protocol for your site
+name: Ryan N. Felice, Ph.D.
+author: Herring Cove
+baseurl: "rnfelice/rnfelice.github.io"
+description: Evolutionary Biologist
+github: http://www.github.com/rnfelice
+twitter: http://www.twitter.com/
+facebook: http://www.facebook.com
+linkedin: http://www.linkedin.com
+email: rnpatel[at]me.com
+location: 42°2'16"N   70°12'47"W
+disqus: ""
 
-# Comments
-disqus_shortname:   default
+##Make sure to edit the above fields, especially for disqus.
 
-# Social
-analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
 
-# personal
-location:           London, UK
-phone:              310-318-5555
-email:              ryan.felice@ucl.ac.uk # change this to your email to receive free emails for your contact submissions via Slapform.com
-
-# Other
-background_image:   /images/bg.jpg
-# Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
-slapform_thankyou_page: /thank-you
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
 
 defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author:
-
-# Jekyll
-permalink:          /blog/:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
-sass:
-  sass_dir:         _sass
-  style:            compressed
-
-# Gems
-gems:
-  - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-
-paginate: 6
-paginate_path: "/blog/page:num/"
-
-jekyll-mentions:
-    base_url: https://rnfelice.github.io/
-
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
