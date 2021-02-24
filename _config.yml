@@ -14,7 +14,7 @@ email: ryan.felice@ucl.ac.uk
 phone: (000) 000-0000
 description: Evolutionary Biology at UCL
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://rnfelice.github.io" # the base hostname & protocol for your site
+url: "https://rnfelice.github.io/index.html" # the base hostname & protocol for your site
 
 # Logo settings
 logo-image-url:
