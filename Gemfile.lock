@@ -260,6 +260,7 @@ DEPENDENCIES
   github-pages
   jekyll-paginate
   jekyll-remote-theme
+  kramdown (>= 2.3.0)
   tzinfo-data
 
 BUNDLED WITH
