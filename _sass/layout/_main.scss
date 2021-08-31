@@ -86,6 +86,7 @@
 
 
 
+
 			> article {
 				border-color: _palette(border);
 				border-left-width: 2px;
@@ -157,56 +158,56 @@
 		@include breakpoint('<=xsmall') {
 			width: 100%;
 		}
+
 	}
 
+	 .blurb {
+			display:none
+	}
 
-> .blurb {
-    display:none
-}
+	@media only screen and (max-width: 768px) {
+			.blurb {
+					display: block;
+					font-size:calc(12px + 0.5vw)
+			}
+	}
+	 .tooltip {
+			position: relative;
+			display: inline-block;
+			border-bottom:1px dotted black
+	}
 
-@media only screen and (max-width: 768px) {
-    .blurb {
-        display: block;
-        font-size:calc(12px + 0.5vw)
-    }
-}
+	 .tooltip .tooltiptext {
+			visibility: hidden;
+			width: 400px;
+			background-color: #18bfef;
+			color: #fff;
+			text-align: center;
+			font-size: 16px;
+			border-radius: 6px;
+			padding: 5px 5px;
+			position: absolute;
+			z-index: 1;
+			top: 100%;
+			left: 50%;
+			margin-left:-200px
+	}
 
-> .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom:1px dotted black
-}
+	 .tooltip:hover .tooltiptext {
+			visibility:visible
+	}
 
-> .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 400px;
-    background-color: #18bfef;
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 6px;
-    padding: 5px 5px;
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left:-200px
-}
+	 .tooltip .tooltiptext::after {
+			content: " ";
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color:transparent transparent #18bfef transparent
+	}
 
-> .tooltip:hover .tooltiptext {
-    visibility:visible
-}
-
-> .tooltip .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color:transparent transparent #18bfef transparent
-}
 #rcornersbox {
     border-radius: 15px;
     background: #18bfef;
