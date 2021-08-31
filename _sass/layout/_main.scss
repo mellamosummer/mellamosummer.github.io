@@ -29,7 +29,7 @@
 		}
 
 		> .post {
-			@include padding((_size(padding) * 4), (_size(padding) * 4));
+			@include padding((_size(padding) * 2), (_size(padding) * 2));
 
 			header {
 				&.major {
@@ -50,7 +50,7 @@
 			}
 
 			@include breakpoint('<=large') {
-				@include padding((_size(padding) * 3), (_size(padding) * 2));
+				@include padding((_size(padding) * 2), (_size(padding) * 2));
 			}
 
 			@include breakpoint('<=small') {
@@ -75,7 +75,7 @@
 
 		> .posts {
 			@include fixed-grid((
-				columns:			2,
+				columns:			3,
 				gutters:			(_size(padding) * 4),
 				horizontal-align:	center,
 				vertical-align:		flex-start,
@@ -95,11 +95,11 @@
 					margin-bottom: 0;
 				}
 
-				&:nth-child(2n - 1) {
+				&:nth-child(3n - 1) {
 					border-left-width: 0;
 				}
 
-				&:nth-child(-n + 2) {
+				&:nth-child(-n + 3) {
 					border-top-width: 0;
 				}
 			}
@@ -156,3 +156,62 @@
 			width: 100%;
 		}
 	}
+
+
+.blurb {
+    display:none
+}
+
+@media only screen and (max-width: 768px) {
+    .blurb {
+        display: block;
+        font-size:calc(12px + 0.5vw)
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom:1px dotted black
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #18bfef;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left:-200px
+}
+
+.tooltip:hover .tooltiptext {
+    visibility:visible
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:transparent transparent #18bfef transparent
+}
+
+#rcornersbox {
+    border-radius: 15px;
+    background: #18bfef;
+    padding: 20px;
+    height: auto;
+    width: 50%;
+    display: inline-block;
+    min-width:300px
+}
