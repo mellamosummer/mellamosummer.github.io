@@ -20,7 +20,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<div id="wrapper">
 
 		<header id="header">
-			<a href="index.html" class="logo">Ryan N. Felice</a>
+			<a href="index.html" class="logo">JLM Lab</a>
 		</header>
 
 		<!-- Nav -->
@@ -53,25 +53,17 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 				
 				 <p>Click <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Leebens-Mack+J">here</a> for all papers via Pubmed </p>
   <p>Click <a href="https://scholar.google.com/citations?user=etMU7ZQAAAAJ&amp;hl=en&nbsp;">here</a> for all papers via Google Scholar </p>
-  <br>
   <h3>
     <strong>
       <em>Papers within the last 7&nbsp;years:</em>&nbsp; </strong>
   </h3>
 
-
-
-{% for pub in site.publications reversed %}
-  {% assign year = pub.path | split:"/" | last | split:"-" | first %}
-  <p>{{pub.authors}}. ({{year}}) {{pub.title}}. <b>{{pub.journal}}.</b> {{pub.issue}}. <a href="https://pubmed.ncbi.nlm.nih.gov/{{pub.pmid}}">PMID: {{pub.pmid}}</a></p>
-{% endfor %}
-
 								<div class="row">
 					<div class="col-9">
-						<p>Goswami, A., E. Noirault, E. J. Coombs, J. Clavel, A.-C. Fabre, T. J. D. Halliday, M. Churchill, A. Curtis, A. Watanabe, N. B. Simmons, B. L. Beatty, J. H. Geisler, D. L. Fox, and R. N. Felice. 2023. Developmental origin underlies evolutionary rate variation across the placental skull. <i>Philosophical Transactions of the Royal Society B: Biological Sciences</i>  378:20220083, <a href="https://doi.org/10.1098/rstb.2022.0083">10.1098/rstb.2022.0083</a></p>
+						<p>Authors. Year. Title. <i>Journal</i>  #:##, <a href="https://doi.org/10.1098/rstb.2022.0083">DOI</a></p>
 					</div>
 					<div class="col" style="padding-top: 1em">
-						<a href="/pdfs/Goswami et al. - 2023 - Developmental origin underlies evolutionary rate v.pdf" class="button">pdf</a>
+						<a href="link.pdf" class="button">pdf</a>
 					</div>
 				</div>
 </div>
@@ -84,7 +76,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 				<!-- Copyright -->
 				<div id="copyright">
-					<ul><li>&copy; Ryan Felice</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					<ul><li>&copy; Jim Leebens-Mack</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 				</div>
 
 			</div>
