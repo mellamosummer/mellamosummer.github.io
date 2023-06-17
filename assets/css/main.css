@@ -2291,7 +2291,7 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #efa8b0;
+			color: #3F6C51;
 		}
 
 		.icon.style2 {
@@ -2884,7 +2884,7 @@ input, select, textarea {
 		}
 
 			.statistics li.style1 {
-				background-color: #efa8b0;
+				background-color: #3F6C51;
 			}
 
 			.statistics li.style2 {
@@ -3546,10 +3546,10 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #3F6C51, #8ACB88, #A2BCE0);
-			background-image: -webkit-linear-gradient(90deg, #3F6C51, #8ACB88, #A2BCE0);
-			background-image: -ms-linear-gradient(90deg, #3F6C51, #8ACB88, #A2BCE0);
-			background-image: linear-gradient(90deg, #3F6C51, #8ACB88, #A2BCE0);
+			background-image: -moz-linear-gradient(90deg, #8ACB88, #3F6C51);
+			background-image: -webkit-linear-gradient(90deg, #8ACB88, #3F6C51);
+			background-image: -ms-linear-gradient(90deg, #8ACB88, #3F6C51);
+			background-image: linear-gradient(90deg, #8ACB88, #3F6C51);
 		}
 
 		#main table tbody tr {
